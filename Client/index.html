@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://bundle.run/yt-player@3.4.1" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js" defer></script>
+  <script src="ymp.js" defer></script>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li class="headline">YoutubeMultiPlayer</li>
+      <li class="active"><a href="">Home</a></li>
+      <li class="right">
+        <div id="statusIndicator" class="indicator"></div>
+        <label id="status">Disconnected</label>
+      </li>
+    </ul>
+  </nav>
+  <div class="content">
+    <div class="left">
+      <div class="controls">
+        <input type="text" id="url">
+        <button onclick="chooseVideo()">Play</button>
+      </div>
+      <div id="player"></div>
+    </div>
+    <div class="right">
+      <div id="users">
+      </div>
+      <hr width="100%">
+      <div id="log">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
